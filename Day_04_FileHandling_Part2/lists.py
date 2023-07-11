@@ -39,6 +39,7 @@ for i in range(len(l_split)):
 
 ############# Collection of Emails from a file: mbox-short.txt ###########
 file = input('Enter the File name: ')
+if len(file) < 1 : file = 'mbox-short.txt'
 
 fh = open(file)
 # fl = fh.read()
