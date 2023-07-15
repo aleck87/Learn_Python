@@ -32,6 +32,6 @@ for line in fh:
         ws = str (word[0])
         print(ws)
         print(type(ws))
-        dm = re.findall('@ ([^ ]*)',ws)
+        dm = re.findall('@([^ ]*)',ws)
         print(lnum, 'Email Id', word, 'Domain', dm)
 print(lnum)

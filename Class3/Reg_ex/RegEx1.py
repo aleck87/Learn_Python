@@ -15,11 +15,11 @@ for line in fh:
     #if re.search ('(^X.*?)', line):
     if re.search ('(^X-\S+:)', line):
     #if re.search('From: ', line):
-    #if re.search('umich (ID*?)', line): #doesnt work
+    #if re.search('umich (ID*?)', line): #doesn't work
         print(line)
 
 #print(find)
 
-lin = From louis@media.berkeley.edu Fri Jan  4 18:10:48 2008
-y = re.findall('@ ([^ ]*)', lin)
+lin = 'From louis@media.berkeley.edu Fri Jan  4 18:10:48 2008'
+y = re.findall('^From .*@([^ ]*)', lin)
 print(y)
