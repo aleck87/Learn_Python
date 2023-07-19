@@ -6,6 +6,7 @@ socket.getaddrinfo('localhost', 8080)
 # connect to the URL /Web or Web Server , PORT
 mysock.connect(('data.pr4e.org', 80))
 cmd = 'GET http://data.pr4e.org/romeo.txt HTTP/1.0\r\n\r\n'.encode()
+#cmd = 'GET http://bosch.com/* HTTP/1.0\r\n\r\n'.encode()
 mysock.send(cmd)
 
 while True:

@@ -1,3 +1,4 @@
+
 # To run this, you can install BeautifulSoup
 # https://pypi.python.org/pypi/beautifulsoup4
 
@@ -6,6 +7,10 @@
 # and unzip it in the same directory as this file
 
 import urllib.request, urllib.parse, urllib.error
+
+import collections
+collections.Callable = collections.abc.Callable
+
 from bs4 import BeautifulSoup
 import ssl
 

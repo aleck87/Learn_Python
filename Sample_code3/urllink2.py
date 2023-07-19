@@ -3,6 +3,10 @@
 # and unzip it in the same directory as this file
 
 from urllib.request import urlopen
+
+import collections
+collections.Callable = collections.abc.Callable
+
 from bs4 import BeautifulSoup
 import ssl
 
