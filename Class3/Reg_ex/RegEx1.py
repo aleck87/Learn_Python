@@ -18,8 +18,13 @@ for line in fh:
     #if re.search('umich (ID*?)', line): #doesn't work
         print(line)
 
+
 #print(find)
 
 lin = 'From louis@media.berkeley.edu Fri Jan  4 18:10:48 2008'
 y = re.findall('^From .*@([^ ]*)', lin)
 print(y)
+
+line = '<p>Please Click <a href="http://gfdgdfgfd.com">here</a></p>'
+x = re.findall('href=".+"', line)
+print(x)
